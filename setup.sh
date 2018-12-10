@@ -7,9 +7,10 @@ sudo apt -y install \
     vim-gtk \
     zsh \
     wget \
+    curl \
     cmake \
     dnsutils \
-    gpg \
+    gnupg \
     python3-pip \
     python-dev \
     tilix \
@@ -21,4 +22,5 @@ pip3 install \
     websocket-client
 git clone git@github.com:r6t/dotfiles.git ~/git/dotfiles
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 sudo chsh -s /usr/bin/zsh $(whoami)
